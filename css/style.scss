@@ -1,0 +1,251 @@
+$color-blanco: #fff;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    top: 0;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.arrowUp{
+    position: fixed;
+    margin-left: 93%;
+    top: 85%;
+    z-index: 99;
+    background: rgba(50, 50, 50, 0.749);
+    
+
+    i{
+        color: #ffffff;
+        border: 1px solid #0c2359;
+        padding: 15px 15px;
+
+    }
+}
+@media(max-width:600px){
+    .arrowUp{
+        margin-left: 80%;
+     
+    }  
+}
+
+.navbar {
+    display: flex;
+    background: #eeeeee;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+
+    .burguer-menu {
+        display: none;
+        border: 1px solid #121212;
+        padding: 10px 15px;
+        border-radius: 40px;
+    }
+
+    .list-menu {
+        display: flex;
+
+        .items-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+
+            a{
+                text-decoration: none;
+                color: #0c2359;
+                font-weight: 500;
+                border-right: 2px solid #0c2359;
+
+                &:nth-last-child(1){
+                    border-right: none;
+                    margin-right: 20px;
+                }
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .items-menu {
+        display: none !important;
+    }
+
+    .burguer-menu {
+        display: block!important;
+    }
+}
+
+.card-img {
+    text-align: center;
+
+    img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+main {
+    #portada {
+        .banner {
+            width: 100%;
+            height: 500px;
+            background-image: url(../img/banner-1.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    #pruebas-pulmonares {
+
+        background-image: url(../img/funcionpulmonar.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .title-pulmonar {
+
+            font-weight: 600;
+            color: $color-blanco;
+
+        }
+
+        .card {
+            background: none;
+            border: none;
+            padding: 1.625rem;
+
+            .card-body {
+                h6 {
+                    color: $color-blanco;
+                    font-size: 1.125rem;
+                }
+            }
+
+            .card-footer {
+                background: none;
+                border: none;
+
+                a {
+                    text-decoration: none;
+                    color: #0c2359;
+                }
+            }
+        }
+    }
+
+    #pruebas-intercambio {
+        h2 {
+            color: #526371;
+
+        }
+
+        .card {
+            border: none;
+        }
+    }
+
+    #estudios-sueño {
+        background-image: url(../img/call-to-action.jpg);
+
+        h2 {
+            color: #fff;
+        }
+        .card {
+            background: none;
+            border: none;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .card-body {
+                h6 {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    #nuestros-productos{
+        h2{
+            color: #526371;
+            font-weight: 900;
+        }
+        h5{
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.925rem;
+        }
+        .n-productos{
+            height: 400px;
+            align-items: center;
+            display: flex!important;
+            flex-direction: inherit;
+            text-align: center;
+            border: none!important;
+            border-radius: none!important;
+            
+
+            &:nth-child(1){
+                background-image: url(../img/espirometros.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(2){
+                background-image: url(../img/sueño.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(3){
+                background-image: url(../img/oxigeno.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+footer{
+    background: #3e4144;
+
+    .list-footer   {
+        list-style: none;
+        li{
+            color:#ffffff;
+        }
+        span{
+            font-weight: bold;
+        }
+    }
+    .redes-sociales{
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            i{
+                color: #919191;
+                font-size: 2rem!important;
+            }
+        }
+    }
+
+    .footer-color-1{
+        background: #8c8c8c;
+        p{
+            color: #ffffff;
+        }
+    }
+}
