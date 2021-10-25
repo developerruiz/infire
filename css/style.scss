@@ -1,4 +1,7 @@
 $color-blanco: #fff;
+$color-section: #eaeaea;
+$color-subtitulo4: #526371;
+$azul-hover: #0c2359;
 
 * {
     padding: 0;
@@ -6,6 +9,10 @@ $color-blanco: #fff;
     box-sizing: border-box;
     top: 0;
     font-size: 16px;
+}
+
+h4{
+    color: $color-subtitulo4;
 }
 
 img {
@@ -37,7 +44,8 @@ img {
 
 .navbar {
     display: flex;
-    background: #eeeeee;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+    // background: #eeeeee;
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
@@ -214,6 +222,130 @@ main {
                 background-size: cover;
                 background-position: center;
             }
+        }
+    }
+    #laboratorio{
+        background: $color-section;
+        span{
+            font-weight: 700;
+        }
+    }
+    #sevicios{
+        h1{
+            font-weight: normal;
+            font-size: 2rem;
+            color: $color-subtitulo4;
+        }
+        h4{
+            a{
+                font-size: 1.525rem;
+                text-decoration: none;
+                color: $color-subtitulo4;
+                &:hover{
+                    color: $azul-hover;
+                }
+            }
+        }
+    }
+    @media (max-width:900px){
+        .contain-estudios{
+            flex-direction: column;
+
+            img{
+                width: 70%;
+            }
+            h4{
+                text-align: center;
+                margin-top: 120px;
+            }
+        }
+    }
+    #paquetes{
+        background: $color-section;
+        h2{
+            color: $color-subtitulo4;
+        }
+        h4{
+            a{
+                font-size: 1.125rem;
+                text-decoration: none;
+                color: $color-subtitulo4;
+                &:hover{
+                    color: $azul-hover;
+                }
+            }
+        }
+        .text-justify{
+            text-align: justify;
+            color: #8c8c8c;
+        }
+    }
+
+
+    // SECCION EDUCACION MED
+
+    #educaion_med{
+        width: 100%;
+        height: 500px;
+        background-image: url(../img/curso8.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+    #videos{
+        background: $color-section;
+        button{
+            border-radius: 4px;
+            border: none;
+            color: #ffffff;
+            background: #0c2359;
+            &:hover{
+                background: #ecd033;
+            }
+        }
+    }
+    #alumnos{
+        .bg-azul{
+            background: $azul-hover;
+            border-radius: 4px;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+
+            }
+        }
+
+        input[type="text"],input[type="email"],input[type="tel"],textarea{
+            border-radius: 0;
+            border: none;
+            background: #4ad6e0 ;
+            color: $color-blanco;
+
+            &:focus{
+                box-shadow: none;
+            background: #fff ;
+            color: #8c8c8c;
+            }
+        }
+
+        button{
+            border-radius: 4px;
+            border: none;
+            color: #ffffff;
+            background: #0c2359;
+            &:hover{
+                background: #ecd033;
+            }
+        }
+    }
+    @media(max-width:500px) {
+        .container-alumnos{
+            justify-content: center;
+        }
+        .title-alumnos{
+            text-align: center;
         }
     }
 }
