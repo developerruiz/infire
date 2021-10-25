@@ -327,6 +327,10 @@ main #alumnos .bg-azul a {
   color: #ffffff;
 }
 
+main #alumnos .bg-azul:hover {
+  background: #ecd033;
+}
+
 main #alumnos input[type="text"], main #alumnos input[type="email"], main #alumnos input[type="tel"], main #alumnos textarea {
   border-radius: 0;
   border: none;
