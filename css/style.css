@@ -8,6 +8,14 @@
   font-size: 16px;
 }
 
+.title {
+  color: #526371 !important;
+}
+
+.text-color {
+  color: #8c8c8c;
+}
+
 h4 {
   color: #526371;
 }
