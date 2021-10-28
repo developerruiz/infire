@@ -14,11 +14,24 @@ $azul-hover: #0c2359;
 .title{
     color: $color-subtitulo4!important;
 }
-.text-color{
+
+.text-color {
     color: #8c8c8c;
 }
 
-h4{
+.list-none {
+    list-style: none;
+}
+
+.color-link {
+    text-decoration: none !important;
+    color: #46bed6 !important;
+}
+.text-decoration{
+    text-decoration: none;
+}
+
+h4 {
     color: $color-subtitulo4;
 }
 
@@ -27,32 +40,32 @@ img {
     height: auto;
 }
 
-.arrowUp{
+.arrowUp {
     position: fixed;
     margin-left: 93%;
     top: 85%;
     z-index: 99;
     background: rgba(50, 50, 50, 0.749);
-    
 
-    i{
+
+    i {
         color: #ffffff;
         border: 1px solid #0c2359;
         padding: 15px 15px;
 
     }
 }
-@media(max-width:600px){
-    .arrowUp{
+
+@media(max-width:600px) {
+    .arrowUp {
         margin-left: 80%;
-     
-    }  
+
+    }
 }
 
 .navbar {
     display: flex;
-    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
-    // background: #eeeeee;
+    box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
@@ -73,16 +86,17 @@ img {
             list-style: none;
             flex-wrap: wrap;
 
-            a{
+            a {
                 text-decoration: none;
                 color: #0c2359;
                 font-weight: 500;
                 border-right: 2px solid #0c2359;
 
-                &:nth-last-child(1){
+                &:nth-last-child(1) {
                     border-right: none;
                     margin-right: 20px;
                 }
+
                 li {
                     margin: 0 10px;
                 }
@@ -97,7 +111,7 @@ img {
     }
 
     .burguer-menu {
-        display: block!important;
+        display: block !important;
     }
 }
 
@@ -177,6 +191,7 @@ main {
         h2 {
             color: #fff;
         }
+
         .card {
             background: none;
             border: none;
@@ -191,39 +206,44 @@ main {
             }
         }
     }
-    #nuestros-productos{
-        h2{
+
+    #nuestros-productos {
+        h2 {
             color: #526371;
             font-weight: 900;
         }
-        h5{
+
+        h5 {
             color: #ffffff;
             font-weight: 700;
             font-size: 1.925rem;
         }
-        .n-productos{
+
+        .n-productos {
             height: 400px;
             align-items: center;
-            display: flex!important;
+            display: flex !important;
             flex-direction: inherit;
             text-align: center;
-            border: none!important;
-            border-radius: none!important;
-            
+            border: none !important;
+            border-radius: none !important;
 
-            &:nth-child(1){
+
+            &:nth-child(1) {
                 background-image: url(../img/espirometros.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-image: url(../img/sueño.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 background-image: url(../img/oxigeno.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -231,58 +251,70 @@ main {
             }
         }
     }
-    #laboratorio{
+
+    #laboratorio {
         background: $color-section;
-        span{
+
+        span {
             font-weight: 700;
         }
     }
-    #sevicios{
-        h1{
+
+    #sevicios {
+        h1 {
             font-weight: normal;
             font-size: 2rem;
             color: $color-subtitulo4;
         }
-        h4{
-            a{
+
+        h4 {
+            a {
                 font-size: 1.525rem;
                 text-decoration: none;
                 color: $color-subtitulo4;
-                &:hover{
+
+                &:hover {
                     color: $azul-hover;
                 }
             }
         }
     }
-    @media (max-width:900px){
-        .contain-estudios{
+
+    @media (max-width:900px) {
+        .contain-estudios {
             flex-direction: column;
 
-            img{
+            img {
                 width: 70%;
             }
-            h4{
+
+            h4 {
                 text-align: center;
                 margin-top: 120px;
             }
         }
     }
-    #paquetes{
+
+    #paquetes {
         background: $color-section;
-        h2{
+
+        h2 {
             color: $color-subtitulo4;
         }
-        h4{
-            a{
+
+        h4 {
+            a {
                 font-size: 1.125rem;
                 text-decoration: none;
                 color: $color-subtitulo4;
-                &:hover{
+
+                &:hover {
                     color: $azul-hover;
                 }
             }
         }
-        .text-justify{
+
+        .text-justify {
             text-align: justify;
             color: #8c8c8c;
         }
@@ -291,102 +323,176 @@ main {
 
     // SECCION EDUCACION MED
 
-    #educaion_med{
+    #educaion_med {
         width: 100%;
         height: 500px;
         background-image: url(../img/curso8.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        
+
     }
 
-    #videos{
+    #videos {
         background: $color-section;
-        button{
+
+        button {
             border-radius: 4px;
             border: none;
             color: #ffffff;
             background: #0c2359;
-            &:hover{
+
+            &:hover {
                 background: #ecd033;
             }
         }
     }
-    #alumnos{
-        .bg-azul{
+
+    #alumnos {
+        .bg-azul {
             background: $azul-hover;
             border-radius: 4px;
-            a{
+
+            a {
                 text-decoration: none;
                 color: #ffffff;
 
             }
-            &:hover{
-                        background: #ecd033;
+
+            &:hover {
+                background: #ecd033;
             }
         }
 
-        input[type="text"],input[type="email"],input[type="tel"],textarea{
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
             border-radius: 0;
             border: none;
-            background: #4ad6e0 ;
+            background: #4ad6e0;
             color: $color-blanco;
 
-            &:focus{
+            &:focus {
                 box-shadow: none;
-            background: #fff ;
-            color: #8c8c8c;
+                background: #fff;
+                color: #8c8c8c;
             }
         }
 
-        button{
+        button {
             border-radius: 4px;
             border: none;
             color: #ffffff;
             background: #0c2359;
-            &:hover{
+
+            &:hover {
                 background: #ecd033;
             }
         }
     }
+
     @media(max-width:500px) {
-        .container-alumnos{
+        .container-alumnos {
             justify-content: center;
         }
-        .title-alumnos{
+
+        .title-alumnos {
             text-align: center;
         }
     }
-}
-footer{
-    background: #3e4144;
 
-    .list-footer   {
-        list-style: none;
-        li{
-            color:#ffffff;
-        }
-        span{
-            font-weight: bold;
-        }
-    }
-    .redes-sociales{
-        ul{
-            list-style: none;
-        }
-        a{
-            text-decoration: none;
-            i{
-                color: #919191;
-                font-size: 2rem!important;
+    .bg-investigacion {
+        background: #7299bf;
+
+        ul {
+            li {
+                a {
+                    color: #ffffff;
+                }
             }
         }
     }
 
-    .footer-color-1{
+    .element-shop {
+        background: rgba(255, 255, 255, 0.678);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 10;
+        transition: .3s ease-in !important;
+        ;
+        -webkit-transition: .3s ease-in !important;
+        ;
+        -o-trasition: .3s ease-in !important;
+        ;
+
+    }
+
+    .element-back:hover .element-shop {
+        display: flex;
+        transition: .3s ease-in !important;
+        -webkit-transition: .3s ease-in !important;
+        -o-trasition: .3s ease-in !important;
+
+    }
+
+    .card {
+        border: none !important;
+    }
+
+    .btn-shoop {
+        background: $azul-hover !important;
+        color: $color-blanco !important;
+        border: none !important;
+    }
+
+    .card-footer {
+        background: none !important;
+        border: none;
+    }
+    // .agotado{
+        
+    // }
+}
+
+footer {
+    background: #3e4144;
+
+    .list-footer {
+        list-style: none;
+
+        li {
+            color: #ffffff;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .redes-sociales {
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+            i {
+                color: #919191;
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    .footer-color-1 {
         background: #8c8c8c;
-        p{
+
+        p {
             color: #ffffff;
         }
     }
